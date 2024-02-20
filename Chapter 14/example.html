@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists, Tables and forms</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 90%;
+            color: #666;
+            background-color: #f8f8f8;
+        }
+        li {
+            list-style-image: url("images/icon-plus.png");
+            line-height: 1.6em;
+        }
+        table {
+            border-spacing: 0px;
+        }
+        th, td {
+            padding: 5px 30px 5px 10px;
+            border-spacing: 0px;
+            font-size: 90%;
+            margin: 0px;
+        }
+        th, td {
+            text-align: left;
+            background-color: #e0e9d0;
+            border-top: 1px solid #f1f8fe;
+            border-bottom: 1px solid #cbd2d8;
+            border-right: 1px solid #cbd2d8;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Poetry Workshop</h1>
+    <p>
+        We will be conducting a number of potery workshops and
+        symposius throught the year.
+    </p>
+    <p>
+        Please note that the following events are free to members:
+    </p>
+    <ul>
+        <li>A Poetic Perspective</li>
+        <li>Walt Whitman at War</li>
+        <li>Found Poems and Outsider Poetry</li>
+    </ul>
+    <table>
+        <tr class="head">
+            <th></th>
+            <th>Chicago</th>
+            <th>New York</th>
+            <th>San Francisco</th>
+        </tr>
+        <tr class="even">
+            <th>A Poetic Perspective</th>
+            <td>Sat, 4 Feb 2024 <br />11am - 2pm</td>
+            <td>Sat, 3 Mar 2024 <br />11am - 2pm</td>
+            <td>Sat, 17 Mar 2024 <br />11am - 2pm</td>
+        </tr>
+        <tr>
+            <th>Found Poems &amp; Outsider Poetry</th>
+            <td>Sat, 7 Feb 2024 <br />11am - 2pm</td>
+            <td>Sat, 5 May 2024 <br />11am - 2pm</td>
+            <td>Sat, 19 May 2024 <br />11am - 2pm</td>
+        </tr>
+        <tr class="even">
+            <th>An Exploration of Space</th>
+            <td>Sat, 7 Aug 2024 <br />11am - 4pm</td>
+            <td>Sat, 5 Aug 2024 <br />11am - 4pm</td>
+            <td>Sat, 19 Oct 2024 <br />11am - 4pm</td>
+        </tr>
+    </table>
+    <form action="http://www.example.com/form.php" method="post">
+        <fieldset>
+            <legend>Register your interest</legend>
+            <p>
+                <label class="title" for="name">Your name:</label>
+                <input type="text" name="name" id="name"><br />
+                <label class="title" for="email">Your email:</label>
+                <input type="text" name="email" id="email"><br />
+            </p>
+            <p>
+                <label class="title" for="location">Your closest city:</label>
+                <select name="location" id="location">
+                    <option value="ny">New York</option>
+                    <option value="il">Chicago</option>
+                    <option value="ca">San Francisco</option>
+                </select>
+            </p>
+            <span class="title">Are you a member?</span>
+            <label><input type="radio" name="member" value="yes"></label>
+            <label><input type="radio" name="member" value="no"></label>
+        </fieldset>
+        <div class="submit"><input type="submit" value="Register" /></div>
+    </form>
+</body>
+
+</html>
